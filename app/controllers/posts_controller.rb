@@ -39,9 +39,11 @@ class PostsController < ApplicationController
   def destroy
     if @post.destroy
       flash[:success] = "Post has been deleted."
-      redirect_to posts_path
+      redirect_to root_path
     end
   end
+
+  private
 
   def post_params
     params.require(:post).permit(:caption, :image)
