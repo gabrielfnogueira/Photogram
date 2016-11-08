@@ -62,5 +62,8 @@ gem 'simple_form'
 # paperclip
 gem 'paperclip'
 
-# Use boootstrap
+# boootstrap
 gem 'bootstrap-sass'
+
+# devise
+gem 'devise'
