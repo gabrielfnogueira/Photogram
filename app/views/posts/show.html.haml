@@ -2,11 +2,11 @@
   .post
     .post-head
       .name
-        Gabriel Nogueira
+        = @post.user.user_name
     .image.center-block
-      =(image_tag @post.image.url(:medium), class:'img-responsive')
+      = (image_tag @post.image.url(:medium), class:'img-responsive')
     %p.caption
-      =@post.caption
+      = @post.caption
 .text-center.edit-links
   = link_to "Cancel", posts_path
   |
