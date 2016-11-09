@@ -6,8 +6,14 @@ module PostsHelper
   end
 
   def liked_post(post)
-    return 'glyphicon-heart' if current_user.voted_for? post
-    'glyphicon-heart-empty'
+    return link_to '', unlike_post_path(post.id), remote: true,
+                                              id: "like_#{post.id}",
+                                              class: "glyphicon glyphicon-heart" if current_user.voted_for? post
+
+    link_to '', like_post_path(post.id), remote: true,
+                                              id: "like_#{post.id}",
+                                              class: "glyphicon glyphicon-heart-empty"
+
   end
 
   private
