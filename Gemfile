@@ -56,14 +56,17 @@ gem 'capybara'
 gem 'haml'
 gem 'haml-rails'
 
-# simple_form
+# simple_form - for better forms
 gem 'simple_form'
 
-# paperclip
+# paperclip - for image upload
 gem 'paperclip'
 
-# boootstrap
+# boootstrap - to make it beautiful
 gem 'bootstrap-sass'
 
-# devise
+# devise - for user/login
 gem 'devise'
+
+# kaminari - to paginate EVERYTHING
+gem 'kaminari', '~> 0.16.3'
