@@ -71,5 +71,5 @@ gem 'devise'
 # kaminari - to paginate EVERYTHING
 gem 'kaminari', '~> 0.16.3'
 
-# jquery-turbolinks - to avoid conflict with jquery on comment pagination
-#gem 'jquery-turbolinks'
+# acts_as_votable - all for the likes
+gem 'acts_as_votable'

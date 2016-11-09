@@ -20,7 +20,7 @@ html {
   height: 100%;
 }
 
-body {
+body {  
   height: 100%;
   background-color: #fafafa;
   font-family: proxima-nova, 'Helvetica Neue', Arial, Helvetica, sans-serif;
@@ -150,7 +150,7 @@ body {
   justify-content: center;
 }
 
-/* ## Wrapper and styling for the new and edit views ## */
+/* ## Wrapper and styling for the new, edit & devise views ## */
 
 .edit-links {
   margin-top: 20px;
@@ -203,6 +203,7 @@ body {
   margin: 0px auto;
 }
 
+
 #paginator {
   color: #4090DB;
   height: 120px;
@@ -238,8 +239,9 @@ body {
   }
 }
 
-#user_avatar {
-  margin: 20px auto;
+.comment-submit-button {
+  position: absolute;
+  left: -9999px;
 }
 
 .profile-header {
@@ -268,4 +270,18 @@ body {
 
 .profile-bio {
   margin-top: 20px;
+}
+
+#user_bio {
+  border: 1px solid gray;
+}
+
+#user_avatar {
+  padding: 1em;
+  margin: 0px auto;
+}
+
+.likes {
+  margin-top: 20px;
+  margin-bottom: 7px;
 }
